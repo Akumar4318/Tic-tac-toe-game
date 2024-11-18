@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="text-center">
+    <style>
+        .body{
+            background-color: #FF8000;
+        }
+        .box{
+            height: 18vmin;
+            width: 18vmin;
+            background-color: #F5F5DC;
+             border:none;
+             box-shadow: 0 0 1rem (0,0,0,0.1);
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-size: 5vmin;
+            color: #E07B39;
+            
+        }
+        
+    </style>
+<h1>TIC-TAC-TOE</h1>
+    <div class="messConatiner my-4 hidden" >
+        <p class="text-[2rem]"> WINNER</p>
+        <button id="newgame" class="bg-btn text-white boreder  rounded-lg my-2 p-2">New Game</button>
+    </div>
+    <main>
+      <div class="container ml-[100px]  h-[70vh] flex items-center justify-center">
+        <div class="game h-[60vmin] w-[60vmin] flex-wrap flex justify-center items-center gap-[1.5vmin]">
+          <button class="box "></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+
+      <button class="p-[1rem] text-[1.25rem] bg-btn text-white border rounded-lg mr-[10px]" id="reset-btn"> Reset button</button>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
